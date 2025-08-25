@@ -270,7 +270,7 @@ class UImanager():
         print("i" + str(insurance))
         sendFrame = tb.Frame(self.formFrame)
         sendFrame.grid(row=4, column=0, padx=20, pady=10, sticky="w")
-        send_button = tb.Button(sendFrame, text="Neuer Patient anlegen starten",  style='Outline.TButton' ,  command=lambda: self.start_new_patient([city.get(), zip.get(), street.get() , name.get(), surname.get(), bday.entry.get().replace("/", "."), gender.get(),tel_box.get(), relative_name.get(), relative_surname.get(), relative_tel.get(), doctor1.get(), insurance.get(), insurance_number.get(), care_deg.get(), care_deg_date.get(), geldleistung.get(), start_date.get(), doctor2.get()], [new_doc_name.get(), new_doc_address.get()]))
+        send_button = tb.Button(sendFrame, text="Neuer Patient anlegen starten",  style='Outline.TButton' ,  command=lambda: self.start_new_patient([city.get(), zip.get(), street.get() , name.get(), surname.get(), bday.entry.get().replace("/", "."), gender.get(),tel_box.get(), relative_name.get(), relative_surname.get(), relative_tel.get(), doctor1.get(), insurance.get(), insurance_number.get(), care_deg.get(), care_deg_date.entry.get(), geldleistung.get(), start_date.entry.get(), doctor2.get()], [new_doc_name.get(), new_doc_address.get()]))
         send_button.grid(row=0, column=0)
         
     def stamm_ui(self, labelframe):
